@@ -6,7 +6,9 @@ function ItemListContainer(props) {
     <Container fluid='md'>
       <Row>
         <Col>
-          <Alert variant='primary'>Bienvenido {props.greeting}</Alert>
+          <Alert variant='primary'>
+            Bienvenido <strong>{props.greeting}</strong>
+          </Alert>
         </Col>
       </Row>
     </Container>
