@@ -1,7 +1,16 @@
 import React from 'react';
+import { Alert, Container, Row, Col } from 'react-bootstrap';
 
 function ItemListContainer(props) {
-  return <h1>Bienvenido {props.greetings}</h1>;
+  return (
+    <Container fluid='md'>
+      <Row>
+        <Col>
+          <Alert variant='primary'>Bienvenido {props.greeting}</Alert>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default ItemListContainer;
