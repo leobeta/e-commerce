@@ -1,0 +1,47 @@
+/*primero en el móvil (mobile first)*/
+
+.logo{
+  font-size: medium;
+}
+
+.logo :hover {
+  background: none;
+  color: white;
+}
+
+nav {
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(78, 78, 78);
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 1em 1em;
+}
+
+nav li a:hover {
+  background: rgb(48, 172, 255);
+  color: white;
+}
+
+.cartWidget {
+  float: right;
+}
+
+/* @media-query */
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+  }
+}
